@@ -1,0 +1,614 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cre",
+				"createBigPhotoDOM"
+			],
+			[
+				"bi",
+				"bigPhotoBack"
+			],
+			[
+				"photo",
+				"photoHolder"
+			],
+			[
+				"create",
+				"createPhotoHolder"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"my",
+				"myMethod"
+			],
+			[
+				"al",
+				"albumHref"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"bloc",
+				"blockRight"
+			],
+			[
+				"addE",
+				"addEventListener"
+			],
+			[
+				"addEv",
+				"addEventListener"
+			],
+			[
+				"createE",
+				"createEventBtn"
+			],
+			[
+				"creat",
+				"createTextNode"
+			],
+			[
+				"pop",
+				"popupbtn"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"eventW",
+				"eventWindowIndicator"
+			],
+			[
+				"up",
+				"upperEvent"
+			],
+			[
+				"crea",
+				"createElement"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
+				"uppe",
+				"upper_event"
+			],
+			[
+				"day",
+				"dayblock"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"las",
+				"lastmonthdays"
+			],
+			[
+				"last",
+				"lastmonthdays"
+			],
+			[
+				"w",
+				"weekday"
+			],
+			[
+				"gene",
+				"generateFirstInterval"
+			],
+			[
+				"in",
+				"indicator"
+			],
+			[
+				"date",
+				"datestr"
+			],
+			[
+				"addW",
+				"addWeekInterval"
+			],
+			[
+				"dayNu",
+				"dayNumRu"
+			],
+			[
+				"wee",
+				"week6"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"table-",
+				"table-cell"
+			],
+			[
+				"da",
+				"days_grid"
+			],
+			[
+				"upp",
+				"upper_test"
+			],
+			[
+				"paddint",
+				"padding-left"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"out",
+				"outBtn"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"arg",
+				"args"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"vol",
+				"volscroll"
+			],
+			[
+				"ti",
+				"timerFullScreen"
+			],
+			[
+				"fullScreen",
+				"fullScreen"
+			],
+			[
+				"vp",
+				"vp_menu"
+			],
+			[
+				"time",
+				"timescroller"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"sc",
+				"scrollFollow"
+			],
+			[
+				"get",
+				"getValue"
+			],
+			[
+				"range",
+				"rangeinput"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"times",
+				"timescroll"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/core.js",
+			"settings":
+			{
+				"buffer_size": 2238,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 252,
+				"line_ending": "Windows",
+				"name": "<html>"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 494,
+				"line_ending": "Windows",
+				"name": "body {"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/home/Desktop/404.shtml",
+		"/C/Users/home/Downloads/OS X Mountain Lion 10.8.3 VMware Image/OS X Mountain Lion/OS X Mountain Lion.vmx",
+		"/F/МПСиС/Panfilova/lab1/SM.v",
+		"/C/Users/home/Desktop/5 семестр/МПСиС/lab1/parallel/FCU.v",
+		"/C/Users/home/Desktop/5 семестр/МПСиС/lab1/parallel/SM.v",
+		"/C/Users/home/VirtualBox VMs/macos/macos.vbox-prev",
+		"/C/Users/home/Desktop/zeka.me/js/core.js",
+		"/C/Users/home/Desktop/zeka.me/index.html",
+		"/C/Users/home/Desktop/zeka.me/template.html",
+		"/C/Users/home/Downloads/Quartus90/crack/quartus/quartus.dat",
+		"/C/Users/home/Desktop/5 семестр/МПСиС/lab1/SM.v",
+		"/C/Users/home/Desktop/hh-school-frontend-master/index.html",
+		"/C/Users/home/Desktop/hh-school-frontend-master/1.html",
+		"/C/Users/home/Desktop/hh-school-frontend-master/css/style.css",
+		"/C/Users/home/Desktop/hh-school-frontend-master/js/core.js",
+		"/C/Users/home/Desktop/hh-school-frontend-master/css/bootstrap.css",
+		"/C/Users/home/Desktop/hh-school-frontend-master/js/bootstrap.js",
+		"/C/Users/home/Desktop/hh-school-frontend-master/js/dataCalendar.js",
+		"/C/Users/home/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/home/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/home/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/C/Users/home/Desktop/hh-school-frontend-master/js/core",
+		"/C/Users/home/Desktop/hh-school-frontend-master/style.css",
+		"/C/Users/home/Desktop/1.html",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/video/js/core.js",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/video/range.css",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/video/style.css",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/video/third.html",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/video/js/workerScrollFollow.js",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/style.css",
+		"/C/Users/home/Desktop/zeka.me",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/video/js/jquery.tools.min.js",
+		"/C/Users/home/Downloads/html5videoplayer-develop/html5videoplayer-develop/vp.sublime-project",
+		"/home/home/videoplayer/html5videoplayer/second.html",
+		"/home/home/videoplayer/html5videoplayer/first.html",
+		"/home/home/videoplayer/vp.sublime-project",
+		"/home/home/Desktop/Untitled Folder/second.html",
+		"/home/home/Desktop/Untitled Folder/first.html",
+		"/home/home/Desktop/Untitled Folder/video/third.html",
+		"/home/home/python/prog3.py",
+		"/home/home/python/prog1.py",
+		"/home/home/python/prog2.py",
+		"/home/home/python/prog4.py",
+		"/home/home/python/foo.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			";\n",
+			"bigPhoto",
+			"delay",
+			"boot",
+			"ExtraDataItem",
+			"100px",
+			"filenames",
+			"padding",
+			"()",
+			"album1",
+			"descriptionPhoto",
+			" src=\"images/albums/album1/1_big.jpg\"",
+			"albumName",
+			"description",
+			"opened",
+			"this",
+			"<p>Test</p>",
+			"Test",
+			";\n",
+			"100px",
+			";\n",
+			"xxxxxxxxxxxx",
+			"j",
+			"day_",
+			"dateInput",
+			"0",
+			"dayEventLast",
+			"crossAddEvent",
+			"upper_event",
+			"cross",
+			"btn",
+			"cross",
+			"cross1",
+			"cross",
+			"indicator",
+			"popindicator",
+			"popup",
+			"main",
+			"0px",
+			"indicator",
+			"month",
+			"31",
+			"week6",
+			"getlementById",
+			"monthdaysCount",
+			"monthdayCount",
+			"firstday",
+			"pt",
+			"span",
+			"absolute",
+			"inline-",
+			"110px",
+			"day",
+			";\n",
+			"50px",
+			"51px",
+			"margin-left: 51px",
+			"border-radius",
+			"11px",
+			"1251",
+			"utf8",
+			"utf",
+			"popover",
+			"popover fade bottom in",
+			"button",
+			"-moz",
+			"-webkit",
+			"body",
+			"headerbtn",
+			"height",
+			"width",
+			"btn",
+			"btn-pri",
+			"btn",
+			"btn btn-primary",
+			"tmp",
+			"webkitfullScreen",
+			"sliderInterval",
+			"document.getElementsByClassName(\"vp_main\")[0]",
+			"test",
+			"myvideo",
+			"timescroll",
+			"test",
+			"myvol",
+			"full_screen",
+			"change_video(",
+			"change_size(",
+			"playpause()"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"volscroll",
+			"fullScreen",
+			"changeVideo(",
+			"changeSize(",
+			"playPause()"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/core.js",
+					"settings":
+					{
+						"buffer_size": 2238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1541,
+								1541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1134.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								7
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<html>",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"auto_name": "body {",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 259.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
