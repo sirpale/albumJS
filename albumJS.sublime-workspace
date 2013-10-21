@@ -243,32 +243,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "js/core.js",
-			"settings":
-			{
-				"buffer_size": 2238,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 252,
-				"line_ending": "Windows",
-				"name": "<html>"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 494,
-				"line_ending": "Windows",
-				"name": "body {"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -294,6 +268,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/home/Documents/GitHub/albumJS/albumJS.sublime-project",
+		"/C/Users/home/Documents/GitHub/albumJS/css/style.css",
+		"/C/Users/home/Documents/GitHub/albumJS/index.html",
+		"/C/Users/home/Documents/GitHub/albumJS/js/core.js",
 		"/C/Users/home/Desktop/404.shtml",
 		"/C/Users/home/Downloads/OS X Mountain Lion 10.8.3 VMware Image/OS X Mountain Lion/OS X Mountain Lion.vmx",
 		"/F/МПСиС/Panfilova/lab1/SM.v",
@@ -345,7 +323,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 117.0,
 		"where_history":
 		[
 		]
@@ -465,91 +443,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/core.js",
-					"settings":
-					{
-						"buffer_size": 2238,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1541,
-								1541
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1134.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 252,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								7
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<html>",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/style.css",
-					"settings":
-					{
-						"buffer_size": 494,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								285,
-								285
-							]
-						],
-						"settings":
-						{
-							"auto_name": "body {",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 259.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

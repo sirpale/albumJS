@@ -48,7 +48,8 @@ var album = (function(){
 		bigPhotoBack.className = "big_photo_back";
 		bigPhoto.style.display = "";
 		bigPhoto.src = photoSrc;
-		
+		bigPhoto.style.marginTop = 70 + window.pageYOffset + "px";
+
 		bigPhotoBack.onclick = function() { document.body.removeChild(this) };
 		bigPhoto.onclick = function() {  };
 
