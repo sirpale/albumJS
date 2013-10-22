@@ -42,19 +42,30 @@ var album = (function(){
 	};
 
 	function createBigPhotoDOM(photoSrc) {
+		document.body.style.overflow = "hidden";
+		
 		var bigPhotoBack = document.createElement("div");
 		var bigPhoto = document.createElement("img");
 		bigPhoto.className = "big_photo";
+		bigPhoto.id = "zoomed_photo";
 		bigPhotoBack.className = "big_photo_back";
 		bigPhoto.style.display = "";
 		bigPhoto.src = photoSrc;
 		bigPhoto.style.marginTop = 70 + window.pageYOffset + "px";
 
-		bigPhotoBack.onclick = function() { document.body.removeChild(this) };
+		bigPhotoBack.onclick = function() {
+			document.body.removeChild(this);
+			document.body.style.overflow = "auto";
+		};
 		bigPhoto.onclick = function() {  };
 
 		bigPhotoBack.appendChild(bigPhoto);
 		document.body.appendChild(bigPhotoBack);
+
+		$('#zoomed_photo').mousewheel(function(event, delta, deltaX, deltaY) {
+			//console.log(delta, deltaX, deltaY);
+			//bigPhoto.style.marginTop = parseInt(bigPhoto.style.marginTop) + 10*deltaY + "px";
+		});
 		
 		return bigPhotoBack;
 	};
@@ -78,7 +89,7 @@ var album = (function(){
 		console.log(elem.id);
 		var zoomWindow = createBigPhotoDOM( imageFilesPath["big"][parseInt(elem.id)] );
 	};
-
+	
 	return my;
 }());
 
