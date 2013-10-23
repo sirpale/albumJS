@@ -1,6 +1,10 @@
 var album = (function(){
 	var my = {};
 	var imageFilesPath = getFileNames();
+	
+	var progress = document.createElement("img");
+	progress.id = "progress_bar";
+	progress.src = "img/progress_bar.gif";
 
 	function parseResponse(response) {
 		return response.match(/([^>\s]+jpg|jpeg|png)</ig);
@@ -52,15 +56,19 @@ var album = (function(){
 			photo.style.width  = parseInt(photo.style.height) * koef + "px";
 		}
 		
+		back.removeChild(progress);
 		photo.style.display = "block";
 		photo.style.opacity = 1;
 	};
 
 	function createBigPhotoDOM(photoSrc) {
 		document.body.style.overflow = "hidden";
+		progress.style.marginTop = document.body.offsetHeight/2 - 15 + "px";
 		
 		var bigPhotoBack = document.createElement("div");
 		var bigPhoto = document.createElement("img");
+
+
 		bigPhoto.className = "big_photo";
 		bigPhoto.id = "zoomed_photo";
 		bigPhoto.style.opacity = 0;
@@ -81,6 +89,7 @@ var album = (function(){
 			setBigPhotoSize(bigPhotoBack, bigPhoto);
 		};
 
+		bigPhotoBack.appendChild(progress);
 		bigPhotoBack.appendChild(bigPhoto);
 		document.body.appendChild(bigPhotoBack);
 
