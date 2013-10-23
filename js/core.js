@@ -41,6 +41,21 @@ var album = (function(){
 		return elem;
 	};
 
+	function setBigPhotoSize(back, photo) {
+		var koef = photo.offsetWidth / photo.offsetHeight;
+		if ( photo.offsetWidth >= back.offsetWidth ) {
+			photo.style.width = back.offsetWidth - 100 + "px";
+		}
+
+		if ( photo.offsetHeight >= back.offsetHeight ) {
+			photo.style.height = back.offsetHeight - 100 + "px";
+			photo.style.width  = parseInt(photo.style.height) * koef + "px";
+		}
+		
+		photo.style.display = "block";
+		photo.style.opacity = 1;
+	};
+
 	function createBigPhotoDOM(photoSrc) {
 		document.body.style.overflow = "hidden";
 		
@@ -48,16 +63,23 @@ var album = (function(){
 		var bigPhoto = document.createElement("img");
 		bigPhoto.className = "big_photo";
 		bigPhoto.id = "zoomed_photo";
-		bigPhotoBack.className = "big_photo_back";
-		bigPhoto.style.display = "";
+		bigPhoto.style.opacity = 0;
 		bigPhoto.src = photoSrc;
-		bigPhoto.style.marginTop = 70 + window.pageYOffset + "px";
+		
+		bigPhotoBack.className = "big_photo_back";
+		bigPhotoBack.style.top = window.pageYOffset + "px";
 
 		bigPhotoBack.onclick = function() {
 			document.body.removeChild(this);
 			document.body.style.overflow = "auto";
 		};
+
 		bigPhoto.onclick = function() {  };
+
+		bigPhoto.onload = function() {
+			console.log("loaded");
+			setBigPhotoSize(bigPhotoBack, bigPhoto);
+		};
 
 		bigPhotoBack.appendChild(bigPhoto);
 		document.body.appendChild(bigPhotoBack);
@@ -66,7 +88,7 @@ var album = (function(){
 			//console.log(delta, deltaX, deltaY);
 			//bigPhoto.style.marginTop = parseInt(bigPhoto.style.marginTop) + 10*deltaY + "px";
 		});
-		
+
 		return bigPhotoBack;
 	};
 

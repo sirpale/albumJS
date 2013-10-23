@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"cre",
-				"createBigPhotoDOM"
+				"bi",
+				"bigPhoto"
 			],
 			[
-				"bi",
-				"bigPhotoBack"
+				"cre",
+				"createBigPhotoDOM"
 			],
 			[
 				"photo",
@@ -247,7 +247,7 @@
 			"file": "js/core.js",
 			"settings":
 			{
-				"buffer_size": 2391,
+				"buffer_size": 3184,
 				"line_ending": "Windows"
 			}
 		},
@@ -255,7 +255,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 494,
+				"buffer_size": 500,
 				"line_ending": "Windows"
 			}
 		},
@@ -263,7 +263,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 252,
+				"buffer_size": 349,
 				"line_ending": "Windows"
 			}
 		}
@@ -348,7 +348,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 117.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -358,6 +358,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"		\n",
+			"clientWidth",
 			";\n",
 			"bigPhoto",
 			"delay",
@@ -476,15 +478,15 @@
 					"file": "js/core.js",
 					"settings":
 					{
-						"buffer_size": 2391,
+						"buffer_size": 3184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1697,
-								1697
+								1595,
+								1595
 							]
 						],
 						"settings":
@@ -493,7 +495,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1094.0,
+						"translation.y": 1458.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -503,15 +505,15 @@
 					"file": "css/style.css",
 					"settings":
 					{
-						"buffer_size": 494,
+						"buffer_size": 500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								287,
-								287
+								466,
+								466
 							]
 						],
 						"settings":
@@ -520,7 +522,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -530,15 +532,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 252,
+						"buffer_size": 349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								137,
+								137
 							]
 						],
 						"settings":
