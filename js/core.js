@@ -82,7 +82,9 @@ var album = (function(){
 			document.body.style.overflow = "auto";
 		};
 
-		bigPhoto.onclick = function() {  };
+		bigPhoto.onclick = function() { 
+			event.cancelBubble = true;
+		};
 
 		bigPhoto.onload = function() {
 			console.log("loaded");
