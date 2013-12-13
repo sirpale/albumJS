@@ -1,7 +1,6 @@
 var album = (function(){
 	var my = {};
 	var imageFilesPath = getFileNames();
-	
 	var progress = document.createElement("img");
 	progress.id = "progress_bar";
 	progress.src = "img/progress_bar.gif";
@@ -61,7 +60,7 @@ var album = (function(){
 		photo.style.opacity = 1;
 	};
 
-	function createBigPhotoDOM(photoSrc) {
+	function createBigPhotoDOM(photoSrc, photoId) {
 		document.body.style.overflow = "hidden";
 		progress.style.marginTop = document.body.offsetHeight/2 - 15 + "px";
 		
@@ -84,6 +83,15 @@ var album = (function(){
 
 		bigPhoto.onclick = function() { 
 			event.cancelBubble = true;
+			console.log(bigPhoto);
+
+			document.body.removeChild(bigPhotoBack);
+
+			if (photoId < (imageFilesPath["big"].length - 1)){
+				createBigPhotoDOM( imageFilesPath["big"][parseInt(photoId) + 1], parseInt(photoId) + 1 );
+			} else {
+				createBigPhotoDOM( imageFilesPath["big"][0], 0 );
+			}
 		};
 
 		bigPhoto.onload = function() {
@@ -120,7 +128,7 @@ var album = (function(){
 	my.zoomPhoto = function(elem) {
 		console.log("zoomPhoto");
 		console.log(elem.id);
-		var zoomWindow = createBigPhotoDOM( imageFilesPath["big"][parseInt(elem.id)] );
+		var zoomWindow = createBigPhotoDOM( imageFilesPath["big"][parseInt(elem.id)], elem.id );
 	};
 	
 	return my;
