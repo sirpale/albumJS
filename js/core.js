@@ -46,14 +46,10 @@ var album = (function(){
 
 	function setBigPhotoSize(back, photo) {
 		var koef = photo.offsetWidth / photo.offsetHeight;
-		if ( photo.offsetWidth >= back.offsetWidth ) {
-			photo.style.width = back.offsetWidth - 100 + "px";
-		}
-
-		if ( photo.offsetHeight >= back.offsetHeight ) {
+		if (( photo.offsetWidth >= back.offsetWidth ) || ( photo.offsetHeight >= back.offsetHeight )) {
 			photo.style.height = back.offsetHeight - 100 + "px";
 			photo.style.width  = parseInt(photo.style.height) * koef + "px";
-		}
+		};
 		
 		back.removeChild(progress);
 		photo.style.display = "block";
@@ -103,10 +99,10 @@ var album = (function(){
 		bigPhotoBack.appendChild(bigPhoto);
 		document.body.appendChild(bigPhotoBack);
 
-		$('#zoomed_photo').mousewheel(function(event, delta, deltaX, deltaY) {
+		//$('#zoomed_photo').mousewheel(function(event, delta, deltaX, deltaY) {
 			//console.log(delta, deltaX, deltaY);
 			//bigPhoto.style.marginTop = parseInt(bigPhoto.style.marginTop) + 10*deltaY + "px";
-		});
+		//});
 
 		return bigPhotoBack;
 	};
