@@ -61,8 +61,8 @@ var album = (function(){
 		progress.style.marginTop = document.body.offsetHeight/2 - 15 + "px";
 		
 		var bigPhotoBack = document.createElement("div");
+		var bigPhotoDiv = document.createElement("div");
 		var bigPhoto = document.createElement("img");
-
 
 		bigPhoto.className = "big_photo";
 		bigPhoto.id = "zoomed_photo";
@@ -93,10 +93,17 @@ var album = (function(){
 		bigPhoto.onload = function() {
 			console.log("loaded");
 			setBigPhotoSize(bigPhotoBack, bigPhoto);
+			console.log(bigPhoto.offsetLeft.toFixed(19));
+			console.log(bigPhoto.offsetLeft);
+
+			bigPhotoDiv.appendChild( createArrow("left_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19)) );
+			bigPhotoDiv.appendChild( createArrow("right_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19)) );
+			console.log(bigPhoto.style);
 		};
 
 		bigPhotoBack.appendChild(progress);
-		bigPhotoBack.appendChild(bigPhoto);
+		bigPhotoDiv.appendChild(bigPhoto);
+		bigPhotoBack.appendChild(bigPhotoDiv);
 		document.body.appendChild(bigPhotoBack);
 
 		//$('#zoomed_photo').mousewheel(function(event, delta, deltaX, deltaY) {
@@ -105,6 +112,23 @@ var album = (function(){
 		//});
 
 		return bigPhotoBack;
+	};
+
+	function createArrow(direction, height, margin) {
+		var arrow = document.createElement("div");
+		arrow.className = "photo_arrow";
+		arrow.id = direction;
+		/*arrow.style.height = height;*/
+		arrow.style.top = parseInt(height)/2 + "px";
+		/*console.log(margin);*/
+		if (direction == "left_arrow") {
+			arrow.style.left = parseInt(margin) - 25 + "px";
+			arrow.innerHTML = "<span class='glyphicon glyphicon-chevron-left'></span>";
+		} else {
+			arrow.style.right = parseInt(margin) - 25 + "px";
+			arrow.innerHTML = "<span class='glyphicon glyphicon-chevron-right'></span>";
+		}
+		return arrow;
 	};
 
 	my.generateAlbum = function(elem) {
