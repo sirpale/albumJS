@@ -64,6 +64,27 @@ var album = (function(){
 		var bigPhotoDiv = document.createElement("div");
 		var bigPhoto = document.createElement("img");
 
+		function switchPhoto(back) { 
+			event.cancelBubble = true;
+			console.log(bigPhoto);
+
+			document.body.removeChild(bigPhotoBack);
+			if (back) {
+				if (photoId == 0) {
+					createBigPhotoDOM( imageFilesPath["big"][imageFilesPath["big"].length - 1], imageFilesPath["big"].length - 1 );
+				} else {
+					createBigPhotoDOM( imageFilesPath["big"][parseInt(photoId) - 1], parseInt(photoId) - 1 );
+				};
+			} else {
+				if (photoId < (imageFilesPath["big"].length - 1)){
+					createBigPhotoDOM( imageFilesPath["big"][parseInt(photoId) + 1], parseInt(photoId) + 1 );
+				} else {
+					createBigPhotoDOM( imageFilesPath["big"][0], 0 );
+				};
+			};
+		};
+
+
 		bigPhoto.className = "big_photo";
 		bigPhoto.id = "zoomed_photo";
 		bigPhoto.style.opacity = 0;
@@ -77,28 +98,19 @@ var album = (function(){
 			document.body.style.overflow = "auto";
 		};
 
-		bigPhoto.onclick = function() { 
-			event.cancelBubble = true;
-			console.log(bigPhoto);
-
-			document.body.removeChild(bigPhotoBack);
-
-			if (photoId < (imageFilesPath["big"].length - 1)){
-				createBigPhotoDOM( imageFilesPath["big"][parseInt(photoId) + 1], parseInt(photoId) + 1 );
-			} else {
-				createBigPhotoDOM( imageFilesPath["big"][0], 0 );
-			}
-		};
+		bigPhoto.onclick = function() { switchPhoto(); }
 
 		bigPhoto.onload = function() {
 			console.log("loaded");
 			setBigPhotoSize(bigPhotoBack, bigPhoto);
-			console.log(bigPhoto.offsetLeft.toFixed(19));
-			console.log(bigPhoto.offsetLeft);
+			var leftArrow = createArrow("left_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19));
+			var rightArrow = createArrow("right_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19));
+			
+			leftArrow.onclick = function() { switchPhoto(1); }
+			rightArrow.onclick = function() { switchPhoto(); }
 
-			bigPhotoDiv.appendChild( createArrow("left_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19)) );
-			bigPhotoDiv.appendChild( createArrow("right_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19)) );
-			console.log(bigPhoto.style);
+			bigPhotoDiv.appendChild(leftArrow);
+			bigPhotoDiv.appendChild(rightArrow);
 		};
 
 		bigPhotoBack.appendChild(progress);
