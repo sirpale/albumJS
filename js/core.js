@@ -50,7 +50,7 @@ var album = (function(){
 			photo.style.height = back.offsetHeight - 100 + "px";
 			photo.style.width  = parseInt(photo.style.height) * koef + "px";
 		};
-		
+
 		back.removeChild(progress);
 		photo.style.display = "block";
 		photo.style.opacity = 1;
@@ -59,7 +59,7 @@ var album = (function(){
 	function createBigPhotoDOM(photoSrc, photoId) {
 		document.body.style.overflow = "hidden";
 		progress.style.marginTop = document.body.offsetHeight/2 - 15 + "px";
-		
+
 		var bigPhotoBack = document.createElement("div");
 		var bigPhotoDiv = document.createElement("div");
 		var bigPhoto = document.createElement("img");
@@ -89,9 +89,10 @@ var album = (function(){
 		bigPhoto.id = "zoomed_photo";
 		bigPhoto.style.opacity = 0;
 		bigPhoto.src = photoSrc;
-		
+
 		bigPhotoBack.className = "big_photo_back";
 		bigPhotoBack.style.top = window.pageYOffset + "px";
+		bigPhotoBack.innerHTML = "<span id='criss_close' class='glyphicon glyphicon-remove'></span>";
 
 		bigPhotoBack.onclick = function() {
 			document.body.removeChild(this);
@@ -108,21 +109,18 @@ var album = (function(){
 		bigPhoto.onload = function() {
 			console.log("loaded");
 			setBigPhotoSize(bigPhotoBack, bigPhoto);
-			
+
 			var leftArrow = createArrow("left_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19));
 			leftArrow.onclick = function() { switchPhoto(1); }
+
 			bigPhotoDiv.appendChild(leftArrow);
+			document.getElementById("criss_close").style.width = bigPhoto.offsetLeft;
 		};
 
 		bigPhotoBack.appendChild(progress);
 		bigPhotoDiv.appendChild(bigPhoto);
 		bigPhotoBack.appendChild(bigPhotoDiv);
 		document.body.appendChild(bigPhotoBack);
-
-		//$('#zoomed_photo').mousewheel(function(event, delta, deltaX, deltaY) {
-			//console.log(delta, deltaX, deltaY);
-			//bigPhoto.style.marginTop = parseInt(bigPhoto.style.marginTop) + 10*deltaY + "px";
-		//});
 
 		return bigPhotoBack;
 	};
