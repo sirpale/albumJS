@@ -98,6 +98,11 @@ var album = (function(){
 			document.body.style.overflow = "auto";
 		};
 
+		document.body.addEventListener("keydown", function(e) {
+			if (e.keyCode == 37) { switchPhoto(1); }
+			if (e.keyCode == 39) { switchPhoto(); }
+		});
+
 		bigPhoto.onclick = function() { switchPhoto(); }
 
 		bigPhoto.onload = function() {
