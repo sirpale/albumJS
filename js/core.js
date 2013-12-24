@@ -103,14 +103,10 @@ var album = (function(){
 		bigPhoto.onload = function() {
 			console.log("loaded");
 			setBigPhotoSize(bigPhotoBack, bigPhoto);
-			var leftArrow = createArrow("left_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19));
-			var rightArrow = createArrow("right_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19));
 			
+			var leftArrow = createArrow("left_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19));
 			leftArrow.onclick = function() { switchPhoto(1); }
-			rightArrow.onclick = function() { switchPhoto(); }
-
 			bigPhotoDiv.appendChild(leftArrow);
-			bigPhotoDiv.appendChild(rightArrow);
 		};
 
 		bigPhotoBack.appendChild(progress);
@@ -130,16 +126,12 @@ var album = (function(){
 		var arrow = document.createElement("div");
 		arrow.className = "photo_arrow";
 		arrow.id = direction;
-		/*arrow.style.height = height;*/
-		arrow.style.top = parseInt(height)/2 + "px";
-		/*console.log(margin);*/
-		if (direction == "left_arrow") {
-			arrow.style.left = parseInt(margin) - 25 + "px";
-			arrow.innerHTML = "<span class='glyphicon glyphicon-chevron-left'></span>";
-		} else {
-			arrow.style.right = parseInt(margin) - 25 + "px";
-			arrow.innerHTML = "<span class='glyphicon glyphicon-chevron-right'></span>";
-		}
+
+		//arrow.style.top = "0px";
+		arrow.style.width = margin;
+		//arrow.style.height = "100%";
+		arrow.innerHTML = "<span class='glyphicon glyphicon-chevron-left'></span>";
+		
 		return arrow;
 	};
 
