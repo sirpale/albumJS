@@ -101,7 +101,7 @@ var album = (function(){
 		document.body.addEventListener("keydown", function(e) {
 			if (e.keyCode == 37) { switchPhoto(1); }
 			if (e.keyCode == 39) { switchPhoto(); }
-		});
+		}, false);
 
 		bigPhoto.onclick = function() { switchPhoto(); }
 
@@ -131,10 +131,7 @@ var album = (function(){
 		var arrow = document.createElement("div");
 		arrow.className = "photo_arrow";
 		arrow.id = direction;
-
-		//arrow.style.top = "0px";
 		arrow.style.width = margin;
-		//arrow.style.height = "100%";
 		arrow.innerHTML = "<span class='glyphicon glyphicon-chevron-left'></span>";
 		
 		return arrow;
