@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"big",
+				"big_photo_back"
+			],
+			[
 				"ba",
 				"background"
 			],
@@ -259,7 +263,7 @@
 			"file": "js/core.js",
 			"settings":
 			{
-				"buffer_size": 5159,
+				"buffer_size": 4760,
 				"line_ending": "Windows"
 			}
 		},
@@ -267,7 +271,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 1118,
+				"buffer_size": 1095,
 				"line_ending": "Windows"
 			}
 		},
@@ -485,7 +489,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -493,15 +497,15 @@
 					"file": "js/core.js",
 					"settings":
 					{
-						"buffer_size": 5159,
+						"buffer_size": 4760,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2622,
-								2622
+								413,
+								413
 							]
 						],
 						"settings":
@@ -510,7 +514,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1416.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -520,15 +524,15 @@
 					"file": "css/style.css",
 					"settings":
 					{
-						"buffer_size": 1118,
+						"buffer_size": 1095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								904,
-								904
+								183,
+								183
 							]
 						],
 						"settings":
@@ -537,7 +541,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 799.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

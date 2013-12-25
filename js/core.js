@@ -64,8 +64,13 @@ var album = (function(){
 		var bigPhotoDiv = document.createElement("div");
 		var bigPhoto = document.createElement("img");
 
-		function switchPhoto(back) { 
-			event.cancelBubble = true;
+		function switchPhoto(e, back) {
+			console.log(e);
+			if(e) {
+				e.cancelBubble = true;
+			} else {
+				window.event.cancelBubble = true;
+			};
 			console.log(bigPhoto);
 
 			document.body.removeChild(bigPhotoBack);
@@ -100,18 +105,24 @@ var album = (function(){
 		};
 
 		document.body.addEventListener("keydown", function(e) {
-			if (e.keyCode == 37) { switchPhoto(1); }
-			if (e.keyCode == 39) { switchPhoto(); }
+			if (e) {
+				if (e.keyCode == 37) { switchPhoto(e,1); }
+				if (e.keyCode == 39) { switchPhoto(e); }				
+			} else {
+				if (window.event.keyCode == 37) { switchPhoto(e,1); }
+				if (window.event.keyCode == 39) { switchPhoto(e); }
+			}
+
 		}, false);
 
-		bigPhoto.onclick = function() { switchPhoto(); }
+		bigPhoto.onclick = function(e) { switchPhoto(e); }
 
 		bigPhoto.onload = function() {
 			console.log("loaded");
 			setBigPhotoSize(bigPhotoBack, bigPhoto);
 
 			var leftArrow = createArrow("left_arrow", bigPhoto.offsetHeight, bigPhoto.offsetLeft.toFixed(19));
-			leftArrow.onclick = function() { switchPhoto(1); }
+			leftArrow.onclick = function(e) { switchPhoto(e,1); }
 
 			bigPhotoDiv.appendChild(leftArrow);
 			document.getElementById("criss_close").style.width = bigPhoto.offsetLeft;
